@@ -1,0 +1,5 @@
+{
+  "url1": "https://api.coinlore.net/api/tickers/?start1&limit=5",
+  "url2": "https://apimeme.com/meme?top=some&bottom=text",
+  "url3": "https://datausa.io/api/data?drilldowns=State&measures=Population&year=latest"
+}
