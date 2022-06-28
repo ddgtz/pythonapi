@@ -1,0 +1,17 @@
+html { font: 16px sans-serif; color: #9b4842; }
+li { list-style-type: none; }
+h1 { color: #77429b; }
+
+.form-container { margin: auto; width: 40%; }
+.form-container h2 { font-size: 1.5rem; color: #207dcc; }
+.form-field { padding: 5px; }
+.form-field label { width: 30%; display: block; }
+.form-field > span {display: block; margin-top: 10px; font-size: 0.8rem; font-style: italic;}
+
+.users-container { width: 50%; margin: auto; }
+.users-container table { width: 100%; }
+.users-container table th {color: coral; background-color: aliceblue; text-align: left; }
+.users-container table tr {color: cornflowerblue; background-color: #f6f3d5; }
+
+.warning { color: #ff9406; font-style: italic; font-size: 0.8rem; }
+.error-msgs { color: red; font: italic 0.8rem sans-serif; padding: 0; }

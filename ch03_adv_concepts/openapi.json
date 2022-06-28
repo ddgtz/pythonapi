@@ -1,0 +1,46 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Celebrity App",
+    "summary": "A celebrity info retrieval system.",
+    "description": "This is a partial listing for our celebrity application.",
+    "contact": {},
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/celebrities": {
+      "get": {
+        "description": "Returns all celebrities.",
+        "responses": {
+          "200": {
+            "description": "A list of celebrities.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v2/celebrities": {
+      "get": {
+        "description": "Version 2 of our app.  Returns all celebrities.",
+        "responses": {
+          "200": {
+            "description": "A list of celebrities.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+{% block css %}
+  <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block main_section %}
+<div class="form-container">
+  <h2 class="form-title">Welcome.  Please log in.</h2>
+
+  {% for message in get_flashed_messages() %}
+      <div class="warning"> {{ message }} </div>
+  {% endfor %}
+
+  <form method="POST" action="/login">
+      {{user.csrf_token}}
+      <div class="form-field">
+          {{user.username.label}}
+          {{user.username(size=20)}}
+          {% if user.username.errors %}
+              <ul class="error-msgs">
+                  {% for err in user.username.errors %}
+                      <li>{{ err }}</li>
+                  {% endfor %}
+              </ul>
+          {% endif %}
+      </div>
+      <div class="form-field">
+          {{user.password.label}}
+          {{user.password }}
+          {% if user.password.errors %}
+              <ul class="error-msgs">
+                  {% for err in user.password.errors %}
+                      <li>{{ err }}</li>
+                  {% endfor %}
+              </ul>
+          {% endif %}
+      </div>
+      {{user.submit}}
+
+      <div class="form-field">
+        <span>I need to register. Register <a href="{{ url_for('register') }}">here</a>.</span>
+      </div>
+
+  </form>
+</div>
+{% endblock %}

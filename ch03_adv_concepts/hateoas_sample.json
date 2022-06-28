@@ -1,0 +1,46 @@
+{
+  "invoice_no": "536365",
+  "stock_code": "85123A",
+  "quantity": 6,
+  "description": "WHITE HANGING HEART T-LIGHT HOLDER",
+  "unit_price":2.55,
+  "customer_id": "17850",
+  "country": "United Kingdom",
+  "links":[
+    {
+      "rel":"customer",
+      "href":"https://server.com/customers/17850",
+      "action":"GET",
+      "types":["text/xml","application/json"]
+    },
+    {
+      "rel":"customer",
+      "href":"https://server.com/customers/17850",
+      "action":"PUT",
+      "types":["application/x-www-form-urlencoded"]
+    },
+    {
+      "rel":"customer",
+      "href":"https://server.com/customers/17850",
+      "action":"DELETE",
+      "types":[]
+    },
+    {
+      "rel":"self",
+      "href":"https://server.com/invoices/536365",
+      "action":"GET",
+      "types":["text/xml","application/json"]
+    },
+    {
+      "rel":"self",
+      "href":"https://server.com/invoices/536365",
+      "action":"PUT",
+      "types":["application/x-www-form-urlencoded"]
+    },
+    {
+      "rel":"self",
+      "href":"https://server.com/invoices/536365",
+      "action":"DELETE",
+      "types":["application/x-www-form-urlencoded"]
+    }]
+}
